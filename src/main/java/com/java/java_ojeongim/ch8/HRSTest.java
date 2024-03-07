@@ -47,14 +47,27 @@ package com.java.java_ojeongim.ch8;
             System.out.println("Director 보너스 = 기본급 * 12 * 6");
         }
     }
+
+
 public class HRSTest {
+
+    public static void calcTax(Employee e) {
+        System.out.println("소득세를 계산합니다.");
+    }
     public static void main(String[] args) {
         Salesman s = new Salesman();
         Consultant c = new Consultant();
         Director d = new Director();
 
-        s.calcBonus();
-        c.calcBonus();
-        d.calcBonus();
+        System.out.println(s.toString());
+        System.out.println(c.toString());
+        System.out.println(d.toString());
+
+        if(s.equals(c)) {
+            System.out.println("동일한 객체입니다.");
+        } else {
+            System.out.println("서로 다른 객체입니다.");
+        }
+
     }
 }
