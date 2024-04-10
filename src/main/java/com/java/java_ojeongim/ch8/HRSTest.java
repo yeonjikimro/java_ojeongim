@@ -63,7 +63,10 @@ public class HRSTest {
         System.out.println(c.toString());
         System.out.println(d.toString());
 
-        if(s.equals(c)) {
+        Salesman s2 = s;
+        System.out.println(s2.toString());
+
+        if(s.equals(s2)) {
             System.out.println("동일한 객체입니다.");
         } else {
             System.out.println("서로 다른 객체입니다.");
